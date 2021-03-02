@@ -1,0 +1,7 @@
+---
+# tasks file for common
+- name: Install default-jdk
+  apt:
+     name: "{{java_var_name}}"
+     state: present
+     update_cache: yes

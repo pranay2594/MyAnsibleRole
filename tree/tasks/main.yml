@@ -1,0 +1,7 @@
+---
+# tasks file for tree
+- name: Install tree
+  apt:
+     name: "{{tree_var_name}}"
+     state: present
+     update_cache: yes
